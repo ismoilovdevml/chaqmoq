@@ -138,14 +138,11 @@ fn main() {
 
 #[cfg(not(target_os = "windows"))]
 #[link(name = "c")]
-
-
 extern "C" {
     fn write(fd: u32, buf: *const u8, count: usize) -> i32;
 }
 
 #[cfg(not(target_os = "windows"))]
-
 fn syscall(message: String) -> io::Result<()> {
     let msg_ptr = message.as_ptr();
     let len = message.len();
@@ -159,10 +156,8 @@ fn syscall(message: String) -> io::Result<()> {
 
 #[cfg(target_os = "windows")]
 #[link(name = "kernel32")]
-
 extern "stdcall" {
     fn GetStdHandle(nStdHandle: i32) -> i32;
-
     fn WriteConsoleW(
         hConsoleOutput: i32,
         lpBuffer: *const u16,
@@ -173,7 +168,6 @@ extern "stdcall" {
 
 #[cfg(target_os = "windows")]
 fn syscall(message: String) -> io::Result<()> {
-
     let msg: Vec<u16> = message.encode_utf16().collect();
     let msg_ptr = msg.as_ptr();
     let len = msg.len() as u32;
