@@ -1,0 +1,1 @@
+Deno.core.print("Salom bratishka, chaqmojs runtime);
