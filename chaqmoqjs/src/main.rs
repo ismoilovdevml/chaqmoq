@@ -15,5 +15,12 @@ async fn run_js(file_path: &str) -> Result<(), AnyError> {
 }
 
 fn main() {
-  println!("Salom bratishka, chamoqjs runtime");
+  println!("Salom bratishka, chaqmojs runtime")
+  let runtime = tokio::runtime::Builder::new_current_thread()
+  .enable_all()
+  .build()
+  .unwrap();
+  if let Err(error) = runtime.block_on(run_js("./chaqmoq.js")) {
+    eprint!("error: {}", error)
+  }
 }
