@@ -7,4 +7,3 @@ edition = "2021"
 
 [dependencies]
 minimio = {git = "https://github.com/cfsamson/examples-minimio", branch = "master"}
-
