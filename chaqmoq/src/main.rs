@@ -13,6 +13,20 @@ impl Tasks {
         }
     }
 }
+// ThreadPoolTaskKind
+
+pub enum ThreadPollTaskKind {
+    FileRead,
+    Encrypt,
+    Close,
+}
+
+// NodeThread
+#[derive(Debug)]
+struct NodeThread {
+    pub(crate) handle: JoinHandle<()>,
+    sender: Sender<Task>,
+}
 
 
 
