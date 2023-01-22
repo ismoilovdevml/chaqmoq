@@ -1,3 +1,22 @@
+struct task {
+    task: Box<dyn Fn() -> Js + Send + 'static>,
+    callback_id: usize,
+    kind: ThreadPollTaskKind,
+}
+
+impl Tasks {
+    fn close() -> Self {
+        Task {
+            task: Box::new(|| Js::Underfined),
+            callback_id: 0,
+            kind: ThreadPollTaskKind::Close, 
+        }
+    }
+}
+
+
+
+
 pub struct Runtime {
     // Mavjud threadlar uchun threadpool
     available_threads: Vec<usize>,
