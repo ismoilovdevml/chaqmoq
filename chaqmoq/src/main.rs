@@ -68,7 +68,7 @@ pub struct Runtime {
     callback_queue: HashMap<usize, Box<dyn FnOnce(Js)>>,
     // Kutilayotgan epool eventslar soni (faqat print uchun ishlatamiz)
     epool_pending_events: usize,
-    // Os bilan events bo'lgan interestni register qiladigan event registrator
+    // OS bilan events bo'lgan interestni register qiladigan event registrator
     epool_registrator: minimio::Registrator,
     // epool thread uchun handle
     epool_thread: thread::JoinHandle<()>,
@@ -80,14 +80,14 @@ pub struct Runtime {
     identity_token: usize,
     // kutilayotgan events pending bu 0 ga teng bo'lganda biz tugatamiz
     pedding_events: usize,
-    // binzing thereadslarimiz uchun handle threadpool
+    // bizning thereadslarimiz uchun handle threadpool
     thread_pool: Vec<NodeThread>,
     // Barcha timerlarimizni va ularning muddati tugashi bilan
     // callback qilish uchun idenfikatorni hold qilib turadi
     timers: BTreeMap<Instant, usize>,
     // timerlarni remove qilish uchun va vaqtincha hold qilib turishi uchun struct
     // Biz runtimega ruxsat beramiz
-    // ownership shuning uchun biz uni qayta ishlatishimiz mumkin bo'lgan same meory
+    // ownership shuning uchun biz uni qayta ishlatishimiz mumkin bo'lgan same memory
     timers_to_remove: Vec<Instant>,
 }
 
