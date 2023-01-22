@@ -1,3 +1,6 @@
+
+static mut RUNTIME: *mut Runtime = std::ptr::null_mut();
+
 struct task {
     task: Box<dyn Fn() -> Js + Send + 'static>,
     callback_id: usize,
@@ -86,4 +89,16 @@ pub struct Runtime {
     // Biz runtimega ruxsat beramiz
     // ownership shuning uchun biz uni qayta ishlatishimiz mumkin bo'lgan same meory
     timers_to_remove: Vec<Instant>,
+}
+
+// bizning epoll-eventloop shug'ullanadigan 3ta eventsni tavsiflaydi
+enum PoolEvent {
+    // Threadpooldan thread idni olgan tuple containing events
+    // callback_id va biz qayta ishlashni kutayotgan ma'lumotlar
+    // callback
+    Threadpool((usize, usize, Js)),
+    //event_id ga ega bo'lgan epool-based eventloop events
+    // event
+    Epool(usize),
+    Timeout,
 }
