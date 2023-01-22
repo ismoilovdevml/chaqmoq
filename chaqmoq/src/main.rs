@@ -21,6 +21,31 @@ pub enum ThreadPollTaskKind {
     Close,
 }
 
+// JavaScript JS
+#[derive(Debug)]
+pub enum Js {
+    Underfined,
+    String(String),
+    Int(usize),
+}
+
+impl Js {
+    // Turlarni bilganimiz uchun qulaylik methodi
+    fn into_string(self) -> Option<String> {
+        match self {
+            Js::String(s) => Some(s),
+            _ => None,
+        }
+    }
+    // Turlarni bilganimiz uchun qulaylik methodi
+    fn into_int(self) -> Option<String> {
+        match self {
+            Js::String(s) => Some(n),
+            _ => None,
+        }
+    }
+}
+
 // NodeThread
 #[derive(Debug)]
 struct NodeThread {
