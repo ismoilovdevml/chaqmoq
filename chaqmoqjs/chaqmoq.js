@@ -1,1 +1,1 @@
-Deno.core.print("Salom bratishka, chaqmojs runtime);
+Deno.core.print("Salom bratishka, chaqmojs runtime");
