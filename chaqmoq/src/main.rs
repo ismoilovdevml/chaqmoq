@@ -107,21 +107,42 @@ impl Runtime {
     pub fn run(mut self, f: impl Fn()) {
         let rt_ptr: *mut Runtime = &mut self;
         unsafe { RUNTIME = rt_ptr };
+
         let mut ticks = 0; //faqat print qilish uchun
+        // avval main funksiyani ishga tushiramiz
         f();
 
-        // event loop
+        // ===== EVENT LOOP =====
 
         while self.pending_events > 0 {
             ticks += 1;
 
+            print(format!("===== TICK {} =====", ticks));
+
+            // ===== TIMERS =====
+            self.process_expried_timers();
+
+            // ===== CALLBACK =====
+            self.run_callbacks();
+
+            // ====== POOL =====
+
+            // avval biz events bor yoki yo'qligin tekshiramiz kerak
+            // agar bo'lmasa break qilamiz
+
+            if self.pending_events == 0 {
+                break;
+            }
+            // biz keyinga timeoutgavaqt olishni xoxlaymiz 
+            // epool waitni keyingi timer uchun vaqt tugashi bilan
+            // bir qilib qo'ydik
             let next_timeout = self.get_next_timer();
 
             let mut epoll_timeout_lock = self.epoll_timeout.lock().unwrap();
             *epoll_timeout_lock = next_timeout;
             // recv oldin biz lockni bo'shatamiz
             drop(epoll_timeout_lock);
-
+            // biz bitta bitta evetni ko'rib chiqamiz 
             if let OK(event) = self.event_receiver.recv(){
                 match event {
                     PoolEvent::Timeout => (),
