@@ -134,6 +134,28 @@ impl Runtime {
                 }
             }
             self.run_callbacks();
+            // ===== TEKSHIRISH =====
+            // o'rnatilgan immidiate funksiyani oson qo'shishimiz mumkin
+            //lekin biz buni bu yerda qilmaymiz
+
+
+            // ====== Callbacklarni yopish ======
+            // resurslarni bo'shatish extemsionlarimiz uchun yana bir hook
+            // buning o'rniga biz har bir callbackga resurlarni chaqiramiz
+
+
+            // biz barca resourcelarni tozalaymiz
+            // destructorlarni ishlashiga qaraymiz
+
+            for thread in self.thread_pool.ito_iter() {
+                thread.sender.send(Task::close()).expect("threadpoolni tozalash");
+                thread.handle.join().unwrap();
+            }
+
+            self.epoll_registrator.close_loop().unwrap();
+            self.epoll_thread.join().unwrap();
+
+            print("TUGADI")
         }
     }
 }
