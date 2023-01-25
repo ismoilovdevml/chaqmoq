@@ -102,3 +102,38 @@ enum PoolEvent {
     Epool(usize),
     Timeout,
 }
+
+impl Runtime {
+    pub fn run(mut self, f: impl Fn()) {
+        let rt_ptr: *mut Runtime = &mut self;
+        unsafe { RUNTIME = rt_ptr };
+        let mut ticks = 0; //faqat print qilish uchun
+        f();
+
+        // event loop
+
+        while self.pending_events > 0 {
+            ticks += 1;
+
+            let next_timeout = self.get_next_timer();
+
+            let mut epoll_timeout_lock = self.epoll_timeout.lock().unwrap();
+            *epoll_timeout_lock = next_timeout;
+            // recv oldin biz lockni bo'shatamiz
+            drop(epoll_timeout_lock);
+
+            if let OK(event) = self.event_receiver.recv(){
+                match event {
+                    PoolEvent::Timeout => (),
+                    PoolEvent::Threadpool((thread_id, callback_id, data)) => {
+                        self.process_threadpool_events(thread_id, callback_id, data);
+                    }
+                    PoolEvent::Epool(event_id) => {
+                        self.process_epool_events(event_id);
+                    }
+                }
+            }
+            self.run_callbacks();
+        }
+    }
+}
