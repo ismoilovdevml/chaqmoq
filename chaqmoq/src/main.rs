@@ -104,6 +104,43 @@ enum PoolEvent {
 }
 
 impl Runtime {
+    pub fn new() -> Self{
+        // ===== DOIMIY THREADPOOL =====
+        let (event_sender, event_receiver) = channel::<PoolEvent>();
+        let mut threads = Vec::with_capacity(4);
+
+
+        for i in 0..4 {
+            let (event_sender, event_receiver) = channel::<Task>();
+            let event_sender = event_sender.clone();
+
+            let handle = thread::Builder::new()
+                .name(format!("pool{}", i))
+                .spawn(move || {
+                    while let Ok(task) = evt_receiver.recv(){
+                        println!(format!("quyidagi turdagi task olindi: {}", task.kind));
+
+                        if let ThreadPollTaskKind::Close = task.kind {
+                            break;
+                        };
+
+                        let res = (task.task)();
+                        println!(format!("{} turdagi tackni tugatdi", task.kind));
+
+                        let event = PoolEvent::Threadpool((i, task.callback_id, res));
+                        event_sender.send(event).expect("threadpool");
+                    }
+                })
+                .expect("Threapoolni ishga tushirib bo'lmadi");
+            
+            let node_thread = NodeThread {
+                handle,
+                sender: evt_sender,
+            };
+
+            threads.push(node_thread);
+        }
+    }
     pub fn run(mut self, f: impl Fn()) {
         let rt_ptr: *mut Runtime = &mut self;
         unsafe { RUNTIME = rt_ptr };
