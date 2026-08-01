@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="485" height="924" viewBox="0 0 485 924" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14.0">
+<rect width="485" height="924" rx="10" fill="#15161e"/>
+<path d="M0 10a10 10 0 0 1 10-10h465a10 10 0 0 1 10 10v22H0z" fill="#1f2335"/>
+<circle cx="18" cy="16" r="5.5" fill="#f7768e"/>
+<circle cx="36" cy="16" r="5.5" fill="#e0af68"/>
+<circle cx="54" cy="16" r="5.5" fill="#9ece6a"/>
+<text x="243" y="21" fill="#7f849c" font-size="12" text-anchor="middle">chaqmoq run examples/showcase.ts</text>
+<text y="46.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">--- primitives ---</tspan>
+</text>
+<text y="66.0" xml:space="preserve">
+<tspan x="20.0" fill="#e0af68">42</tspan>
+<tspan x="36.8" fill="#c0caf5"> </tspan>
+<tspan x="45.2" fill="#e0af68">-0</tspan>
+<tspan x="62.0" fill="#c0caf5"> </tspan>
+<tspan x="70.4" fill="#e0af68">3.14</tspan>
+<tspan x="104.0" fill="#c0caf5"> </tspan>
+<tspan x="112.4" fill="#e0af68">10n</tspan>
+<tspan x="137.6" fill="#c0caf5"> </tspan>
+<tspan x="146.0" fill="#e0af68">true</tspan>
+<tspan x="179.6" fill="#c0caf5"> </tspan>
+<tspan x="188.0" fill="#c0caf5" font-weight="bold">null</tspan>
+<tspan x="221.6" fill="#c0caf5"> </tspan>
+<tspan x="230.0" fill="#6c7394">undefined</tspan>
+<tspan x="305.6" fill="#c0caf5"> </tspan>
+<tspan x="314.0" fill="#9ece6a">Symbol(id)</tspan>
+</text>
+<text y="106.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">--- collections ---</tspan>
+</text>
+<text y="126.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">{</tspan>
+</text>
+<text y="146.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">  name: </tspan>
+<tspan x="87.2" fill="#9ece6a">&#x27;chaqmoq&#x27;</tspan>
+<tspan x="162.8" fill="#c0caf5">,</tspan>
+</text>
+<text y="166.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">  tags: [ </tspan>
+<tspan x="104.0" fill="#9ece6a">&#x27;runtime&#x27;</tspan>
+<tspan x="179.6" fill="#c0caf5">, </tspan>
+<tspan x="196.4" fill="#9ece6a">&#x27;v8&#x27;</tspan>
+<tspan x="230.0" fill="#c0caf5">, </tspan>
+<tspan x="246.8" fill="#9ece6a">&#x27;rust&#x27;</tspan>
+<tspan x="297.2" fill="#c0caf5"> ],</tspan>
+</text>
+<text y="186.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">  meta: Map(2) {</tspan>
+</text>
+<text y="206.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">    </tspan>
+<tspan x="53.6" fill="#9ece6a">&#x27;stars&#x27;</tspan>
+<tspan x="112.4" fill="#c0caf5"> =&gt; </tspan>
+<tspan x="146.0" fill="#e0af68">0</tspan>
+<tspan x="154.4" fill="#c0caf5">,</tspan>
+</text>
+<text y="226.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">    </tspan>
+<tspan x="53.6" fill="#9ece6a">&#x27;license&#x27;</tspan>
+<tspan x="129.2" fill="#c0caf5"> =&gt; </tspan>
+<tspan x="162.8" fill="#9ece6a">&#x27;MIT&#x27;</tspan>
+</text>
+<text y="246.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">  },</tspan>
+</text>
+<text y="266.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">  unique: Set(3) { </tspan>
+<tspan x="179.6" fill="#e0af68">1</tspan>
+<tspan x="188.0" fill="#c0caf5">, </tspan>
+<tspan x="204.8" fill="#e0af68">2</tspan>
+<tspan x="213.2" fill="#c0caf5">, </tspan>
+<tspan x="230.0" fill="#e0af68">3</tspan>
+<tspan x="238.4" fill="#c0caf5"> },</tspan>
+</text>
+<text y="286.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">  bytes: Uint8Array(4) [ </tspan>
+<tspan x="230.0" fill="#e0af68">222</tspan>
+<tspan x="255.2" fill="#c0caf5">, </tspan>
+<tspan x="272.0" fill="#e0af68">173</tspan>
+<tspan x="297.2" fill="#c0caf5">, </tspan>
+<tspan x="314.0" fill="#e0af68">190</tspan>
+<tspan x="339.2" fill="#c0caf5">, </tspan>
+<tspan x="356.0" fill="#e0af68">239</tspan>
+<tspan x="381.2" fill="#c0caf5"> ],</tspan>
+</text>
+<text y="306.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">  when: </tspan>
+<tspan x="87.2" fill="#bb9af7">2026-01-01T00:00:00.000Z</tspan>
+<tspan x="288.8" fill="#c0caf5">,</tspan>
+</text>
+<text y="326.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">  pattern: </tspan>
+<tspan x="112.4" fill="#f7768e">/chaqmoq/gi</tspan>
+</text>
+<text y="346.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">}</tspan>
+</text>
+<text y="386.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">--- class instances ---</tspan>
+</text>
+<text y="406.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">Point { x: </tspan>
+<tspan x="112.4" fill="#e0af68">3</tspan>
+<tspan x="120.8" fill="#c0caf5">, y: </tspan>
+<tspan x="162.8" fill="#e0af68">4</tspan>
+<tspan x="171.2" fill="#c0caf5"> }</tspan>
+</text>
+<text y="446.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">--- circular references ---</tspan>
+</text>
+<text y="466.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">{ id: </tspan>
+<tspan x="70.4" fill="#e0af68">1</tspan>
+<tspan x="78.8" fill="#c0caf5">, self: </tspan>
+<tspan x="146.0" fill="#7dcfff">[Circular *1]</tspan>
+<tspan x="255.2" fill="#c0caf5"> }</tspan>
+</text>
+<text y="506.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">--- format specifiers ---</tspan>
+</text>
+<text y="526.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">chaqmoq scored 42 points (99.5% accuracy)</tspan>
+</text>
+<text y="566.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">--- tables ---</tspan>
+</text>
+<text y="586.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">┌─────────┬─────────┬───────────────────┬───────────┐</tspan>
+</text>
+<text y="606.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">│ (index) │ command │ description       │ stability │</tspan>
+</text>
+<text y="626.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">├─────────┼─────────┼───────────────────┼───────────┤</tspan>
+</text>
+<text y="646.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">│ 0       │ run     │ run a program     │ stable    │</tspan>
+</text>
+<text y="666.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">│ 1       │ test    │ run tests         │ stable    │</tspan>
+</text>
+<text y="686.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">│ 2       │ repl    │ interactive shell │ stable    │</tspan>
+</text>
+<text y="706.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">└─────────┴─────────┴───────────────────┴───────────┘</tspan>
+</text>
+<text y="746.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">--- grouping and timing ---</tspan>
+</text>
+<text y="766.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">startup</tspan>
+</text>
+<text y="786.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">  loading modules</tspan>
+</text>
+<text y="806.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">  permissions</tspan>
+</text>
+<text y="826.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">    read: denied</tspan>
+</text>
+<text y="846.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">    net: denied</tspan>
+</text>
+<text y="866.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">work: 6.331ms</tspan>
+</text>
+<text y="886.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">total: </tspan>
+<tspan x="78.8" fill="#e0af68">499999500000</tspan>
+</text>
+</svg>

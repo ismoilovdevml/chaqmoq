@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="956" height="164" viewBox="0 0 956 164" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14.0">
+<rect width="956" height="164" rx="10" fill="#15161e"/>
+<path d="M0 10a10 10 0 0 1 10-10h936a10 10 0 0 1 10 10v22H0z" fill="#1f2335"/>
+<circle cx="18" cy="16" r="5.5" fill="#f7768e"/>
+<circle cx="36" cy="16" r="5.5" fill="#e0af68"/>
+<circle cx="54" cy="16" r="5.5" fill="#9ece6a"/>
+<text x="478" y="21" fill="#7f849c" font-size="12" text-anchor="middle">chaqmoq run broken.ts</text>
+<text y="46.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">charging order 1: </tspan>
+<tspan x="171.2" fill="#e0af68">250</tspan>
+</text>
+<text y="66.0" xml:space="preserve">
+<tspan x="20.0" fill="#f7768e" font-weight="bold">error</tspan>
+<tspan x="62.0" fill="#c0caf5">: Uncaught (in promise) Error: order 7 not found</tspan>
+</text>
+<text y="86.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">    at </tspan>
+<tspan x="78.8" fill="#c0caf5" opacity="0.62">findOrder (file:///Users/macbook/Documents/devops/personal/chaqmoq/docs/snippets/broken.ts:15:11)</tspan>
+</text>
+<text y="106.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">    at </tspan>
+<tspan x="78.8" fill="#c0caf5" opacity="0.62">chargeCustomer (file:///Users/macbook/Documents/devops/personal/chaqmoq/docs/snippets/broken.ts:21:10)</tspan>
+</text>
+<text y="126.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">    at </tspan>
+<tspan x="78.8" fill="#c0caf5" opacity="0.62">file:///Users/macbook/Documents/devops/personal/chaqmoq/docs/snippets/broken.ts:26:34</tspan>
+</text>
+</svg>

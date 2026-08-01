@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="653" height="564" viewBox="0 0 653 564" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14.0">
+<rect width="653" height="564" rx="10" fill="#15161e"/>
+<path d="M0 10a10 10 0 0 1 10-10h633a10 10 0 0 1 10 10v22H0z" fill="#1f2335"/>
+<circle cx="18" cy="16" r="5.5" fill="#f7768e"/>
+<circle cx="36" cy="16" r="5.5" fill="#e0af68"/>
+<circle cx="54" cy="16" r="5.5" fill="#9ece6a"/>
+<text x="327" y="21" fill="#7f849c" font-size="12" text-anchor="middle">chaqmoq --help</text>
+<text y="46.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">Chaqmoq is a JavaScript and TypeScript runtime built on V8 and Rust.</tspan>
+</text>
+<text y="86.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">Programs start with no access to the filesystem, the network or the</tspan>
+</text>
+<text y="106.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">environment. Grant exactly what a program needs with the --allow-* flags.</tspan>
+</text>
+<text y="146.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">  chaqmoq run --allow-read=. build.ts</tspan>
+</text>
+<text y="166.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">  chaqmoq run --allow-net=0.0.0.0:8000 server.ts</tspan>
+</text>
+<text y="186.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">  chaqmoq test --allow-read tests/</tspan>
+</text>
+<text y="226.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5" font-weight="bold">Usage:</tspan>
+<tspan x="70.4" fill="#c0caf5"> </tspan>
+<tspan x="78.8" fill="#c0caf5" font-weight="bold">chaqmoq</tspan>
+<tspan x="137.6" fill="#c0caf5"> &lt;COMMAND&gt;</tspan>
+</text>
+<text y="266.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5" font-weight="bold">Commands:</tspan>
+</text>
+<text y="286.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">  </tspan>
+<tspan x="36.8" fill="#c0caf5" font-weight="bold">run</tspan>
+<tspan x="62.0" fill="#c0caf5">   Run a JavaScript or TypeScript program</tspan>
+</text>
+<text y="306.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">  </tspan>
+<tspan x="36.8" fill="#c0caf5" font-weight="bold">eval</tspan>
+<tspan x="70.4" fill="#c0caf5">  Evaluate a snippet of code</tspan>
+</text>
+<text y="326.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">  </tspan>
+<tspan x="36.8" fill="#c0caf5" font-weight="bold">repl</tspan>
+<tspan x="70.4" fill="#c0caf5">  Start an interactive read-eval-print loop</tspan>
+</text>
+<text y="346.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">  </tspan>
+<tspan x="36.8" fill="#c0caf5" font-weight="bold">test</tspan>
+<tspan x="70.4" fill="#c0caf5">  Run tests registered with `Chaqmoq.test`</tspan>
+</text>
+<text y="366.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">  </tspan>
+<tspan x="36.8" fill="#c0caf5" font-weight="bold">info</tspan>
+<tspan x="70.4" fill="#c0caf5">  Show runtime, V8 and cache information</tspan>
+</text>
+<text y="386.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">  </tspan>
+<tspan x="36.8" fill="#c0caf5" font-weight="bold">help</tspan>
+<tspan x="70.4" fill="#c0caf5">  Print this message or the help of the given subcommand(s)</tspan>
+</text>
+<text y="426.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5" font-weight="bold">Options:</tspan>
+</text>
+<text y="446.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">  </tspan>
+<tspan x="36.8" fill="#c0caf5" font-weight="bold">-h</tspan>
+<tspan x="53.6" fill="#c0caf5">, </tspan>
+<tspan x="70.4" fill="#c0caf5" font-weight="bold">--help</tspan>
+</text>
+<text y="466.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">          Print help (see a summary with &#x27;-h&#x27;)</tspan>
+</text>
+<text y="506.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">  </tspan>
+<tspan x="36.8" fill="#c0caf5" font-weight="bold">-V</tspan>
+<tspan x="53.6" fill="#c0caf5">, </tspan>
+<tspan x="70.4" fill="#c0caf5" font-weight="bold">--version</tspan>
+</text>
+<text y="526.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">          Print version</tspan>
+</text>
+</svg>

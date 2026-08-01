@@ -1,1 +1,11 @@
 /target
+/dist
+
+# Editor and OS noise
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Tooling scratch output
+.playwright-mcp/

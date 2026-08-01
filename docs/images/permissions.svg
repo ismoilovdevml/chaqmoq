@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1006" height="224" viewBox="0 0 1006 224" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14.0">
+<rect width="1006" height="224" rx="10" fill="#15161e"/>
+<path d="M0 10a10 10 0 0 1 10-10h986a10 10 0 0 1 10 10v22H0z" fill="#1f2335"/>
+<circle cx="18" cy="16" r="5.5" fill="#f7768e"/>
+<circle cx="36" cy="16" r="5.5" fill="#e0af68"/>
+<circle cx="54" cy="16" r="5.5" fill="#9ece6a"/>
+<text x="503" y="21" fill="#7f849c" font-size="12" text-anchor="middle">the permission model</text>
+<text y="46.0" xml:space="preserve">
+<tspan x="20.0" fill="#7aa2f7">$</tspan>
+<tspan x="28.4" fill="#c0caf5"> chaqmoq run docs/snippets/permission-demo.ts</tspan>
+</text>
+<text y="66.0" xml:space="preserve">
+<tspan x="20.0" fill="#f7768e" font-weight="bold">error</tspan>
+<tspan x="62.0" fill="#c0caf5">: Uncaught (in promise) NotCapable: Requires read access to &quot;/etc/hosts&quot;, run again with the --allow-read flag</tspan>
+</text>
+<text y="86.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">    at </tspan>
+<tspan x="78.8" fill="#c0caf5" opacity="0.62">readTextFile (ext:chaqmoq/04_fs.js:64:10)</tspan>
+</text>
+<text y="106.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">    at </tspan>
+<tspan x="78.8" fill="#c0caf5" opacity="0.62">file:///Users/macbook/Documents/devops/personal/chaqmoq/docs/snippets/permission-demo.ts:7:28</tspan>
+</text>
+<text y="166.0" xml:space="preserve">
+<tspan x="20.0" fill="#7aa2f7">$</tspan>
+<tspan x="28.4" fill="#c0caf5"> chaqmoq run --allow-read=/etc docs/snippets/permission-demo.ts</tspan>
+</text>
+<text y="186.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">read 284 bytes from /etc/hosts</tspan>
+</text>
+</svg>

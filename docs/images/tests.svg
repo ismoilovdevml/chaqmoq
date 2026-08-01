@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="519" height="304" viewBox="0 0 519 304" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14.0">
+<rect width="519" height="304" rx="10" fill="#15161e"/>
+<path d="M0 10a10 10 0 0 1 10-10h499a10 10 0 0 1 10 10v22H0z" fill="#1f2335"/>
+<circle cx="18" cy="16" r="5.5" fill="#f7768e"/>
+<circle cx="36" cy="16" r="5.5" fill="#e0af68"/>
+<circle cx="54" cy="16" r="5.5" fill="#9ece6a"/>
+<text x="259" y="21" fill="#7f849c" font-size="12" text-anchor="middle">chaqmoq test examples/tests/</text>
+<text y="46.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">running tests from 1 file</tspan>
+</text>
+<text y="66.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">URL parses query parameters ... </tspan>
+<tspan x="288.8" fill="#9ece6a">ok</tspan>
+<tspan x="305.6" fill="#c0caf5"> </tspan>
+<tspan x="314.0" fill="#c0caf5" opacity="0.62">(0ms)</tspan>
+</text>
+<text y="86.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">URLSearchParams writes back to its URL ... </tspan>
+<tspan x="381.2" fill="#9ece6a">ok</tspan>
+<tspan x="398.0" fill="#c0caf5"> </tspan>
+<tspan x="406.4" fill="#c0caf5" opacity="0.62">(0ms)</tspan>
+</text>
+<text y="106.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">base64 round-trips ... </tspan>
+<tspan x="213.2" fill="#9ece6a">ok</tspan>
+<tspan x="230.0" fill="#c0caf5"> </tspan>
+<tspan x="238.4" fill="#c0caf5" opacity="0.62">(0ms)</tspan>
+</text>
+<text y="126.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">TextEncoder and TextDecoder round-trip UTF-8 ... </tspan>
+<tspan x="431.6" fill="#9ece6a">ok</tspan>
+<tspan x="448.4" fill="#c0caf5"> </tspan>
+<tspan x="456.8" fill="#c0caf5" opacity="0.62">(0ms)</tspan>
+</text>
+<text y="146.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">crypto.randomUUID produces distinct v4 UUIDs ... </tspan>
+<tspan x="431.6" fill="#9ece6a">ok</tspan>
+<tspan x="448.4" fill="#c0caf5"> </tspan>
+<tspan x="456.8" fill="#c0caf5" opacity="0.62">(0ms)</tspan>
+</text>
+<text y="166.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">timers resolve in order ... </tspan>
+<tspan x="255.2" fill="#9ece6a">ok</tspan>
+<tspan x="272.0" fill="#c0caf5"> </tspan>
+<tspan x="280.4" fill="#c0caf5" opacity="0.62">(21ms)</tspan>
+</text>
+<text y="186.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">Response.json sets a JSON content type ... </tspan>
+<tspan x="381.2" fill="#9ece6a">ok</tspan>
+<tspan x="398.0" fill="#c0caf5"> </tspan>
+<tspan x="406.4" fill="#c0caf5" opacity="0.62">(0ms)</tspan>
+</text>
+<text y="206.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">a body can only be consumed once ... </tspan>
+<tspan x="330.8" fill="#9ece6a">ok</tspan>
+<tspan x="347.6" fill="#c0caf5"> </tspan>
+<tspan x="356.0" fill="#c0caf5" opacity="0.62">(0ms)</tspan>
+</text>
+<text y="226.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">reading a file without permission throws ... </tspan>
+<tspan x="398.0" fill="#9ece6a">ok</tspan>
+<tspan x="414.8" fill="#c0caf5"> </tspan>
+<tspan x="423.2" fill="#c0caf5" opacity="0.62">(0ms)</tspan>
+</text>
+<text y="266.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">test result: </tspan>
+<tspan x="129.2" fill="#9ece6a">ok</tspan>
+<tspan x="146.0" fill="#c0caf5">. 9 passed; 0 failed; 0 ignored </tspan>
+<tspan x="414.8" fill="#c0caf5" opacity="0.62">(0.02s)</tspan>
+</text>
+</svg>

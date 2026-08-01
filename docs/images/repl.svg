@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="552" height="364" viewBox="0 0 552 364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14.0">
+<rect width="552" height="364" rx="10" fill="#15161e"/>
+<path d="M0 10a10 10 0 0 1 10-10h532a10 10 0 0 1 10 10v22H0z" fill="#1f2335"/>
+<circle cx="18" cy="16" r="5.5" fill="#f7768e"/>
+<circle cx="36" cy="16" r="5.5" fill="#e0af68"/>
+<circle cx="54" cy="16" r="5.5" fill="#9ece6a"/>
+<text x="276" y="21" fill="#7f849c" font-size="12" text-anchor="middle">chaqmoq repl</text>
+<text y="46.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">Chaqmoq 0.2.0 (</tspan>
+<tspan x="146.0" fill="#c0caf5" opacity="0.62">v8 15.0.245.2-rusty</tspan>
+<tspan x="305.6" fill="#c0caf5">)</tspan>
+</text>
+<text y="66.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5" opacity="0.62">permissions: none — exit with ctrl+d, ctrl+c or .exit</tspan>
+</text>
+<text y="86.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">&gt; const runtime = { name: &quot;chaqmoq&quot;, v8: Chaqmoq.version.v8 }</tspan>
+</text>
+<text y="106.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">&gt; runtime</tspan>
+</text>
+<text y="126.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">{ name: </tspan>
+<tspan x="87.2" fill="#9ece6a">&#x27;chaqmoq&#x27;</tspan>
+<tspan x="162.8" fill="#c0caf5">, v8: </tspan>
+<tspan x="213.2" fill="#9ece6a">&#x27;15.0.245.2-rusty&#x27;</tspan>
+<tspan x="364.4" fill="#c0caf5"> }</tspan>
+</text>
+<text y="146.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">&gt; [1, 2, 3].map((n) =&gt; n ** 3)</tspan>
+</text>
+<text y="166.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">[ </tspan>
+<tspan x="36.8" fill="#e0af68">1</tspan>
+<tspan x="45.2" fill="#c0caf5">, </tspan>
+<tspan x="62.0" fill="#e0af68">8</tspan>
+<tspan x="70.4" fill="#c0caf5">, </tspan>
+<tspan x="87.2" fill="#e0af68">27</tspan>
+<tspan x="104.0" fill="#c0caf5"> ]</tspan>
+</text>
+<text y="186.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">&gt; await Promise.resolve(&quot;top-level await works&quot;)</tspan>
+</text>
+<text y="206.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">top-level await works</tspan>
+</text>
+<text y="226.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">&gt; new Map([[&quot;uz&quot;, &quot;Salom&quot;], [&quot;en&quot;, &quot;Hello&quot;]])</tspan>
+</text>
+<text y="246.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">Map(2) {</tspan>
+</text>
+<text y="266.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">  </tspan>
+<tspan x="36.8" fill="#9ece6a">&#x27;uz&#x27;</tspan>
+<tspan x="70.4" fill="#c0caf5"> =&gt; </tspan>
+<tspan x="104.0" fill="#9ece6a">&#x27;Salom&#x27;</tspan>
+<tspan x="162.8" fill="#c0caf5">,</tspan>
+</text>
+<text y="286.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">  </tspan>
+<tspan x="36.8" fill="#9ece6a">&#x27;en&#x27;</tspan>
+<tspan x="70.4" fill="#c0caf5"> =&gt; </tspan>
+<tspan x="104.0" fill="#9ece6a">&#x27;Hello&#x27;</tspan>
+</text>
+<text y="306.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">}</tspan>
+</text>
+<text y="326.0" xml:space="preserve">
+<tspan x="20.0" fill="#c0caf5">&gt; .exit</tspan>
+</text>
+</svg>
